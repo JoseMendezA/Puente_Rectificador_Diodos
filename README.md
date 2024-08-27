@@ -89,7 +89,8 @@ Donde:
 - $\( C = 47 \mu F \)$
 
 > [!WARNING]
-> La frecuencia del rizado de voltaje es del doble de la señal  $\( V_o \)$.
+> - La frecuencia del rizado de voltaje es del doble de la señal  $\( V_o \)$.
+> - De la ecuación para $V_{rizado(pp)}$, a mayor capacidad del condensador, menor rizado de voltaje (inversamente proporcional).
 
 Sustituyendo los valores:
 ```math
@@ -108,4 +109,10 @@ V_{rizado(pp)} = \frac{9.92 \, mA}{120 \cdot 47 \mu F} \approx 1.76 \, V
 > [!TIP]
 > Este análisis incluye los cálculos fundamentales para un puente rectificador de onda completa, con especial atención en la forma de onda del voltaje de salida, los valores promedios y el efecto de un condensador sobre el rizado.
 
+
+## **¿Cómo es el comportamiento de la corriente en los diodos con el efecto del condensador sobre el rizado?**
+1. Únicamente circula corriente por los diodos en el tiempo de carga del condensador de $\( C = 47 \mu F \)$.
+2. El tiempo de carga se presenta entre el $\( V_{rizado(máximo)} =15.57 \, V \)$ y  $\( V_{rizado(mínimo)} = 13.89 \, V \)$. Es decir, el tiempo que tarda la senoidal en ir de $\(13.89 \, V \ )$ a $\(15.57 \, V \ )$.
+3. Los diodos y el secundario del transformador presentan corrientes de pico repetitiva.
+4. ¿Cómo calcular el pico de corriente por los diodos?
 
